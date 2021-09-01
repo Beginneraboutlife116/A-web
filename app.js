@@ -18,6 +18,11 @@ app.get('/about', (req, res) => {
   res.render('about')
 })
 
+// portfolio page route
+app.get('/portfolio', (req, res) => {
+  res.render('portfolio')
+})
+
 // listen server
 app.listen(port, () => {
   console.log(`Web is running on http://localhost:${port}`)
