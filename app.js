@@ -22,6 +22,10 @@ app.get('/about', (req, res) => {
 app.get('/portfolio', (req, res) => {
   res.render('portfolio')
 })
+// contact page route
+app.get('/contact', (req, res) => {
+  res.render('contact')
+})
 
 // listen server
 app.listen(port, () => {
