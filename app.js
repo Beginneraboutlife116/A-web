@@ -13,6 +13,11 @@ app.get('/', (req, res) => {
   res.render('home')
 })
 
+// about page route
+app.get('/about', (req, res) => {
+  res.render('about')
+})
+
 // listen server
 app.listen(port, () => {
   console.log(`Web is running on http://localhost:${port}`)
