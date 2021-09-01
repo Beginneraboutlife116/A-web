@@ -8,6 +8,9 @@ const port = 3000
 app.engine('handlebars', exphbs({ defaultLayouts: 'main' }))
 app.set('view engine', 'handlebars')
 
+// use public
+app.use(express.static('public'))
+
 // home page route
 app.get('/', (req, res) => {
   res.render('home')
